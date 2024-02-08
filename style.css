@@ -1,0 +1,289 @@
+
+ /* site wide style */
+* {
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: black;
+    /* margin: 0 12vw; */
+}
+
+ /* header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+ /* logo size */
+nav>div>img {
+    max-width: 300px;
+}
+
+ /* i.e. navigation buttons excluding the resume */
+button,
+a.tertiary-button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    text-decoration: none;
+}
+
+ /* i.e.resume button */
+a.primary-button {
+    border-radius: 20px;
+    background-color: #FFB6A9;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem 0.8rem;
+}
+
+ /* i.e. submit button */
+.secondary-button {
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: .8rem;
+    padding: .8rem 2.4rem;
+
+}
+
+ /* i.e. navigation buttons excluding the resume */
+.tertiary-button {
+    color: white;
+    background-color: black;
+}
+
+ /* hamburger menu exists but does not sho on desktop version */
+.hamburger-menu {
+    display: none;
+}
+
+.hero-section {
+    color: white;
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+ /* tagline and explanation section */
+.hero-section>div:nth-child(1) {
+    max-width: 500px;
+}
+
+.hero-section h1 {
+    font-weight: 500;
+    font-size: 3.8rem;
+}
+
+.hero-section p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.my-illustration>img {
+    max-height: 315px;
+    padding-right: 40px;
+}
+
+.linkedin>img,
+.youtube>img {
+    margin-right: 5px;
+    max-height: 20px;
+}
+
+#aboutme-section {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('Images\ and\ Files//Desktop - 7.svg');
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#aboutme-section>h1 {
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+#aboutme-section>p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8em;
+}
+
+#aboutme-section>h5 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: .5em;
+}
+
+#aboutme-section span {
+    font-weight: 600;
+}
+
+ /* Margin of 12vw everywhere unless stated
+ because of the background image I could not use margin itself */
+nav,
+section,
+footer {
+    padding: 0 12vw;
+}
+
+footer{
+    color: #FFB6A9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+footer a{
+    color: #FFB6A9;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+footer h5{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+ /* youtube and linkedin logos */
+footer img{
+    margin-right: 5px;
+    max-height: 15px;
+}
+
+#projects-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url('Images\ and\ Files//Desktop - 7.svg');
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    row-gap: 40px;
+}
+
+#projects-section > div{
+    width: 300px;
+}
+
+#projects-section img{
+    width: 300px;
+    border-radius: 25px;
+}
+
+#projects-section h3{
+    margin-left: 12px;
+    font-weight: 400;
+}
+
+ /* aka the contact section */
+#contact-form{
+    background-image: url('Images\ and\ Files//Desktop - 7.svg');
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+ /* form only */
+#form-container{
+    display: flex;
+    flex-direction: column;
+    align-items:start ;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+#fname, #lname{
+    width: 200px;
+}
+
+#email, #message{
+    width: 300px;
+}
+
+#message{
+    height: 200px;
+}
+
+#form-container input{
+    border: .5px solid #8A7B7B;
+    border-radius: 5px;
+}
+
+#contact-form h1{
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+
+#contact-form p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+     /* hamburger menu is visible in mobile version */
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .hero-section{
+        flex-direction: column-reverse;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+     /* logo */
+    nav>div>img {
+        max-width: 200px;
+    }
+
+    .my-illustration>img {
+        max-height: 250px;
+        padding-right: 0;
+    }
+    nav,
+    section,
+    footer {
+        padding: 0 8vw;
+    }
+
+    #aboutme-section>h5 {
+        line-height: 1.5em;
+    }
+    #contact-form{
+        flex-direction: column;
+    }
+
+    #contact-form > div:nth-child(1){
+        margin-bottom: 3rem;
+    }
+}
